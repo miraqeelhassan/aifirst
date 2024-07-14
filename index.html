@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-to-Text</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Voice-to-Text</h1>
+        <button id="startRecord">Start Recording</button>
+        <button id="stopRecord" disabled>Stop Recording</button>
+        <div id="micStatus">Microphone Status: <span id="micIndicator" class="off">Off</span></div>
+        <textarea id="outputText" placeholder="Recognized text will appear here" readonly></textarea>
+        <button id="textToSpeech">Text to Speech</button>
+        <button id="downloadSpeech" disabled>Download Speech</button>
+        <button id="clearText">Clear Text</button> <!-- Added clear text button -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
